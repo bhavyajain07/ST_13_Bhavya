@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox Website</title>
+	<style>
+		.flex-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #f2f2f2;
+			padding: 10px;
+		}
+		.flex-item {
+			margin: 5px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			flex: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div class="flex-item">Bhavya Jain</div>
+		<div class="flex-item">ST-AIML</div>
+		<div class="flex-item">Roll number: 13</div>
+	</div>
+
+	<p>Answer 1: Website</p>
+	<p>Answer 2: 1700 Hz</p>
+	<p>Answer 3: 20 N</p>
+	<p>Answer 4: 0.25, 0.33, 0.50</p>
+	<p>Answer 5: 25km/min</p>
+	<p>Answer 6: 6</p>
+	<p>Answer 7: Nice to meet you, Bhavya Jain! As an AI language model, I don't have access to any personal information beyond what you share with me. Is there anything specific you need help with related to your engineering studies? I'm here to assist you in any way I can.</p>
+	<p>Answer 8: function findWinningID(InputNum):
+        IDs = [1, 2, ..., InputNum]
+        leftToRight = true
+        while length(IDs) > 1:
+            if leftToRight:
+                IDs = IDs[0::2]
+            else:
+                IDs = IDs[-1::-2][-1::-1]
+            leftToRight = not leftToRight
+        return IDs[0]
+    </p>
+	<p>Answer 9: 
+        x = 0 
+y = 0 
+m = 4
+n = 3
+q=[]
+print("Initial state = (0,0)")
+print("Capacities = (4,3)")
+print("Goal state = (0,2)")
+print("Rule 1: Fill jug 1")
+print("Rule 2: Fill jug 2")
+print("Rule 3: Empty jug 1")
+print("Rule 4: Empty jug 2")
+print("Rule 5: Transfer from jug 1 to jug 2 if both have water")
+print("Rule 6: Transfer from jug 2 to jug 1 if both have water")
+print("Rule 7: Transfer from jug 1 to jug 2")
+print("Rule 8: Transfer from jug 2 to jug 1")
+
+while (y != 2 or x!=0):
+  r = int(input("Enter rule"))
+  if(r == 1):
+    x = m
+  elif(r == 2):
+    y = n
+  elif(r == 3):
+    x = 0
+  elif(r == 4):
+    y = 0
+  elif(r == 5):
+    t = n - y
+    #y = n
+    x -= t
+    y+=t
+  elif(r == 6):
+    t = m - x
+    #x = m
+    y -= t
+    x += t
+  elif(r == 7):
+    y += x
+    x = 0
+  elif(r == 8):
+    x += y
+    y = 0
+  print (x, y)
+  q.append((x,y))
+
+print("State space is ", q)
+print("Path cost is ", q.len)
+
+    </p>
+    <p>Paragraph 10</p>
+</body>
+</html>
